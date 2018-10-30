@@ -31,7 +31,7 @@ wwv_flow_api.create_page(
 ,p_autocomplete_on_off=>'OFF'
 ,p_page_template_options=>'#DEFAULT#'
 ,p_last_updated_by=>'DHUHA'
-,p_last_upd_yyyymmddhh24miss=>'20181030105411'
+,p_last_upd_yyyymmddhh24miss=>'20181030111148'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(4212153947107502)
@@ -61,6 +61,18 @@ wwv_flow_api.create_page_item(
 ,p_lov_display_extra=>'YES'
 ,p_attribute_01=>'NONE'
 ,p_attribute_02=>'N'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(4212390866107504)
+,p_name=>'P5_NEW_1'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_api.id(4212153947107502)
+,p_prompt=>'New'
+,p_display_as=>'NATIVE_NUMBER_FIELD'
+,p_cSize=>30
+,p_field_template=>wwv_flow_api.id(2620528379568956)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_03=>'right'
 );
 end;
 /
